@@ -36,6 +36,6 @@ jobs:
         with:
           subscriptionId: ${{ sccrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ sccrets.AZURE_RG }}
-          template: ./test.bicep
-          parameters: ./test.parameters.json
+          template: ./hellologicapp.bicep
+          parameters: ./hellologicapp.parameters.json
           failOnStdErr: false
