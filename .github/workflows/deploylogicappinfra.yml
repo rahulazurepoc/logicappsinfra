@@ -34,8 +34,8 @@ jobs:
       - name: Deploy
         uses: azure/arm-deploy@v1
         with:
-          subscriptionId: ${{ sccrets.AZURE_SUBSCRIPTION }}
-          resourceGroupName: ${{ sccrets.AZURE_RG }}
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+          resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./hellologicapp.bicep
           parameters: ./hellologicapp.parameters.json
           failOnStdErr: false
