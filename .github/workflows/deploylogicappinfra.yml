@@ -38,4 +38,4 @@ jobs:
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./hellologicapp.bicep
           parameters: ./hellologicapp.parameters.json
-          failOnStdErr: false
+          failOnStdErr: true
